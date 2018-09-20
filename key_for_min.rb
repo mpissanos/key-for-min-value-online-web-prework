@@ -6,8 +6,8 @@ min = nil
 min_name = Infinity
 name_hash.each do |key, value|
   if value <= Infinity
-    min_name = key
+    min = key
 end
-min_name
+min
    end
 end
