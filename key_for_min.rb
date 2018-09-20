@@ -6,22 +6,11 @@ min_name = nil
 min = Infinity
 name_hash.each do |key, value|
   if value <= Infinity
-    min = key
+    min = value
+    min_name = key
 end
-min
   end
+  min_name
 end
 
 
-def key_for_min_value(name_hash)
-  smallest_name = nil
-  smallest = 1000000
-
-  name_hash.each do |key, value|
-    if value <= smallest
-      smallest = value
-      smallest_name = key
-    end
-  end
-  smallest_name
-end
